@@ -8,7 +8,7 @@
     "start": "next start -p $PORT",
     "heroku-postbuild": "npm run build",
     "test": "jest --watch",
-    "coverage": "jest --coverage",
+    "test:coverage": "jest --coverage",
     "sonarqube": "sonar-scanner"
   },
   "dependencies": {

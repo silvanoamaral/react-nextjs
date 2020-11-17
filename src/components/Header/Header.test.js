@@ -5,5 +5,5 @@ import Header from './Header'
 
 it('should render Header', () => {
   const { getByText } = render(<Header />)
-  expect(getByText('Header')).toBeInTheDocument()
+  expect(getByText('Silvano Amaral')).toBeInTheDocument()
 })
