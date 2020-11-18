@@ -48,5 +48,6 @@
     "hooks": {
       "pre-commit": "eslint --fix"
     }
-  }
+  },
+  "cacheDirectories": [".next/cache"]
 }
