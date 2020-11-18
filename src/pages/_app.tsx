@@ -15,7 +15,6 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
     <>
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
