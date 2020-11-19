@@ -40,20 +40,7 @@ export default class MyDocument extends Document {
   render(): JSX.Element {
     return (
       <Html lang="pt">
-        <Head>
-          <meta charSet="utf-8" />
-          <link rel="icon" href="/favicon.ico" />
-          <meta
-            name="description"
-            content="Projeto desenvolvimento com NextJS"
-          />
-          <link rel="manifest" href="/manifest.json" />
-
-          <link
-            href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700"
-            rel="stylesheet"
-          />
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />

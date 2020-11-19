@@ -15,6 +15,18 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
     <>
       <Head>
         <title>Create Next App</title>
+        <meta charSet="utf-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Projeto desenvolvimento com TypeScript, React, NextJS e Styled Components"
+        />
+        <link rel="manifest" href="/manifest.json" />
+
+        <link
+          href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700"
+          rel="stylesheet"
+        />
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />

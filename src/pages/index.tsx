@@ -1,14 +1,15 @@
 import React from 'react'
-import Head from 'next/head'
 
-const Home: React.FC = () => {
+export default function Home() {
   return (
     <main>
       <h1>
         Welcome to <a href="https://nextjs.org">Next.js!</a>
       </h1>
+      <strong>
+        Projeto desenvolvimento com TypeScript, React, NextJS e Styled
+        Components
+      </strong>
     </main>
   )
 }
-
-export default Home
