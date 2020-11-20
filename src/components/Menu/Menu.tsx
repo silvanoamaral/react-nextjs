@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import styled from 'styled-components'
 
 const Menu = () => {
   return (
@@ -18,6 +17,11 @@ const Menu = () => {
       <li>
         <Link href="/blog/hello-world">
           <a>Blog Post</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/login">
+          <a>Área Restrita</a>
         </Link>
       </li>
     </ul>

@@ -6,6 +6,9 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+  *:focus {
+    outline: none;
+  }
   a {
     cursor: pointer;
     text-decoration: none;
