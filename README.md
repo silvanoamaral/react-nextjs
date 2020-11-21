@@ -1,4 +1,4 @@
-# SonarQube [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=silvanoamaral_react-nextjs&metric=alert_status)](https://sonarcloud.io/dashboard?id=silvanoamaral_react-nextjs)
+# SonarQube [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=silvanoamaral_react-nextjs&metric=alert_status)](https://sonarcloud.io/dashboard?id=silvanoamaral_react-nextjs) [![Coverage](https://sonarcloud.io/api/badges/measure?key=silvanoamaral_react-nextjs&metric=coverage)](https://sonarcloud.io/component_measures?id=silvanoamaral_react-nextjs&metric=coverage)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
