@@ -20,6 +20,11 @@ const Menu = () => {
         </Link>
       </li>
       <li>
+        <Link href="/finance">
+          <a>finance</a>
+        </Link>
+      </li>
+      <li>
         <Link href="/login">
           <a>Área Restrita</a>
         </Link>
