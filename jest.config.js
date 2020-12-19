@@ -3,6 +3,9 @@ module.exports = {
   bail: 1,
   clearMocks: true,
   collectCoverage: true,
-  collectCoverageFrom: ['components/**/*.js', 'pages/**/*.js'],
+  collectCoverageFrom: [
+    './src/**/*.{js,jsx,ts,tsx}',
+    '!**/node_modules/**'
+  ],
   coverageReporters: ['lcov', 'text']
 }
