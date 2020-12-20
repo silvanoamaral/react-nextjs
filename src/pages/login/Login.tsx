@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Button from '../../components/Button'
+
 const Container = styled.div`
   width: 90%;
   max-width: 400px;
@@ -30,26 +32,6 @@ const Label = styled.label`
   margin: 5px 0;
 `
 
-const Button = styled.button`
-  background-color: #90caf9;
-  border: 0;
-  border-radius: 5px;
-  color: rgba(0, 0, 0, 0.87);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-  font-size: 13px;
-  letter-spacing: 0.02857em;
-  text-transform: uppercase;
-  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-
-  &:hover {
-    background-color: #648dae;
-  }
-`
-
 function Login() {
   return (
     <Container>
@@ -64,7 +46,7 @@ function Login() {
       </Box>
 
       <Box>
-        <Button>Acessar</Button>
+        <Button onClick={() => console.log('Clicou no botao login')}>Acessar</Button>
       </Box>
     </Container>
   )
