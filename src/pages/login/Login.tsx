@@ -46,7 +46,10 @@ function Login() {
       </Box>
 
       <Box>
-        <Button onClick={() => console.log('Clicou no botao login')}>Acessar</Button>
+        <Button
+          type="button"
+          onClick={() => console.log('Clicou no botao login')}
+        >Acessar</Button>
       </Box>
     </Container>
   )

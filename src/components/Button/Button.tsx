@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const ButtonContainer = styled.button`
+const ButtonContainer = styled.button.attrs(props => ({
+  type: props.type || "button"
+}))`
   background-color: #90caf9;
   border: 0;
   border-radius: 5px;
@@ -21,19 +23,21 @@ const ButtonContainer = styled.button`
   }
 `
 
-interface Props {
+interface IProps {
   children: string;
   onClick?: () => void;
+  type?: 'submit' | 'reset' | 'button';
 }
 
-const Button: React.FC<Props> = ({ children, onClick }) => {
-  return <ButtonContainer onClick={onClick} >{children}</ButtonContainer>
-}
-
+// const Button: React.FC<IProps> = ({ children, onClick }) => {
+//   return <ButtonContainer onClick={onClick} >{children}</ButtonContainer>
+// }
 
 //Functional Component
-function Button2({ children, onClick }:Props) {
-  return <ButtonContainer onClick={onClick} >{children}</ButtonContainer>
+function Button2({ children, onClick, type }:IProps) {
+  return <ButtonContainer onClick={onClick} type={type}>
+    {children}
+  </ButtonContainer>
 }
 
 export default Button2
