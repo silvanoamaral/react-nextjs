@@ -8,7 +8,7 @@ describe('Menu', () => {
   test('should render Menu', () => {
 
     const { getByRole } = render(<Menu />)
-    const home = getByRole('link', { name: 'Home' })
+    const home = getByRole('link', { name: 'about' })
 
   })
 })
