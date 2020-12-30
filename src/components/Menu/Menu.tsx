@@ -18,33 +18,37 @@ const ListMav = styled.ul`
   margin: 0 auto;
 `
 
+const Target = styled.a`
+  color: #000;
+`
+
 const Menu = () => {
   return (
     <Box>
       <ListMav>
         <li>
           <Link href="/">
-            <a>Home</a>
+            <Target>Home</Target>
           </Link>
         </li>
         <li>
           <Link href="/about">
-            <a>About Us</a>
+            <Target>About Us</Target>
           </Link>
         </li>
         <li>
           <Link href="/blog/hello-world">
-            <a>Blog Post</a>
+            <Target>Blog Post</Target>
           </Link>
         </li>
         <li>
           <Link href="/finance">
-            <a>finance</a>
+            <Target>finance</Target>
           </Link>
         </li>
         <li>
           <Link href="/login">
-            <a>Área Restrita</a>
+            <Target>Área Restrita</Target>
           </Link>
         </li>
       </ListMav>
