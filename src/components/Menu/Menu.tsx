@@ -28,12 +28,12 @@ const Menu = () => {
       <ListMav>
         <li>
           <Link href="/">
-            <Target>Home</Target>
+            <Target data-testid="home">Home</Target>
           </Link>
         </li>
         <li>
           <Link href="/about">
-            <Target>About Us</Target>
+            <Target data-testid="about">About Us</Target>
           </Link>
         </li>
         <li>
