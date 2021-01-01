@@ -42,6 +42,7 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head />
         <body>
+          <noscript>You need to enable JavaScript to run this app.</noscript>
           <Main />
           <NextScript />
         </body>
