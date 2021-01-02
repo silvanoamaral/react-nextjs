@@ -24,6 +24,17 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
         )
       })
     }
+
+    let deferredPrompt;
+
+    window.addEventListener('beforeinstallprompt', event => {
+      console.log("Install Prompt fired")
+      // For older browsers
+      event.preventDefault()
+      deferredPrompt = event
+
+    })
+
   }, [])
 
   return (
