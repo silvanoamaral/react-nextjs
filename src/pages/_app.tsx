@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react'
 import { AppProps } from 'next/app'
-
 import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
 
-import theme from '../styles/theme'
 import GlobalStyle from '../styles/global'
 
 import Header from '../components/Header'
 import Menu from '../components/Menu'
+
+const themeName = process.env.NEXT_PUBLIC_THEME_NAME || 'theme1'
+const themePath = require(`../themes/${themeName}`)
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   useEffect(() => {
@@ -57,7 +58,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
         />
         <title>Create Next App</title>
       </Head>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={themePath?.default}>
         <GlobalStyle />
 
         <Header />

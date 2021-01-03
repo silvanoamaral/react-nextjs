@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:thema1": "NEXT_PUBLIC_THEME_NAME=theme1 next dev",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
     "heroku-postbuild": "npm run build",
