@@ -6,7 +6,6 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyle from '../styles/global'
 
 import Header from '../components/Header'
-import Menu from '../components/Menu'
 
 const themePath = require(`../themes/${process.env.NEXT_PUBLIC_THEME_NAME}`)
 
@@ -61,7 +60,6 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
         <GlobalStyle />
 
         <Header />
-        <Menu />
 
         <Component {...pageProps} />
       </ThemeProvider>
