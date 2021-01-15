@@ -1,7 +1,5 @@
 const CACHE_NAME = 'test_reactjs'
-const URL_CACHE = [
-  '/',
-]
+const URL_CACHE = []
 
 self.addEventListener('install', function (event) {
   event.waitUntil(
