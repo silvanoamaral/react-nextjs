@@ -1,5 +1,7 @@
 const CACHE_NAME = 'test_reactjs'
-const URL_CACHE = []
+const URL_CACHE = [
+  'https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700'
+]
 
 self.addEventListener('install', function (event) {
   event.waitUntil(
