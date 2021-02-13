@@ -1,7 +1,9 @@
 import React from 'react'
 
+import AboutViewModel from './AboutModalView'
+
 function About() {
-  return <h1>Página Sobre</h1>
+return <h1 data-testid="title">{AboutViewModel.title}</h1>
 }
 
 export default About

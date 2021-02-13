@@ -86,7 +86,6 @@ export default function Header() {
   const [navOpen, setNavOpen] = useState(false)
 
   const handleClickNav = () => {
-    console.log('Clique no menu')
     setNavOpen(!navOpen)
   }
 
