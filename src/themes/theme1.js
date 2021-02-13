@@ -9,7 +9,6 @@ export default Object.assign({}, base, {
     primary,
     secondary,
     background: '#fff',
-    text: '#505050',
-    primary: '#000'
+    text: '#505050'
   }),
 })
