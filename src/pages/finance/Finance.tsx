@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 import financeService from '../../service/financeService'
+import FinanceModalView from './FinanceModalView'
 
 const Pre = styled.pre`
   background: #ebebeb;
@@ -23,12 +24,14 @@ function Finance() {
     getFinance()
   },[])
 
-  if (!finance)
-    return <p>Aguarde</p>
-
   return (
     <>
-    <h1>Finance</h1>
+    <h1 data-testid="title">{FinanceModalView.title}</h1>
+
+    {!finance && (
+      <p data-testid="loading">Loading...</p>
+    )}
+
     {finance &&
       <>
         <p>Ação: {finance[0].meta.symbol}</p>
