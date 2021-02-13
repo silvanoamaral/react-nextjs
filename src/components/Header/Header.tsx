@@ -86,6 +86,7 @@ export default function Header() {
   const [navOpen, setNavOpen] = useState(false)
 
   const handleClickNav = () => {
+    console.log('Clique no menu')
     setNavOpen(!navOpen)
   }
 
@@ -96,10 +97,15 @@ export default function Header() {
         <ButtonNav>
           <InputNav
             id="menu-hamburguer"
+            data-testid="inputHamburguer"
             type="checkbox"
             defaultChecked={navOpen}
           />
-          <label htmlFor="menu-hamburguer" onClick={() => handleClickNav()}>
+          <label
+            htmlFor="menu-hamburguer"
+            data-testid="menu-hamburguer"
+            onClick={() => handleClickNav()}
+          >
             <Hamburguer />
           </label>
         </ButtonNav>
