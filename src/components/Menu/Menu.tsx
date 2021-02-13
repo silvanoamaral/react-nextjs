@@ -63,6 +63,11 @@ const dataRouter = [
     path: '/'
   },
   {
+    id: 'movie',
+    label: 'Movies',
+    path: '/movie'
+  },
+  {
     id: 'about',
     label: 'About Us',
     path: '/about'
