@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react'
 import { AppProps } from 'next/app'
-import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
+import Head from 'next/head'
+import withReduxSaga from 'next-redux-saga'
 
+import { wrapper } from '../redux/core/store'
 import GlobalStyle from '../styles/global'
-
 import Header from '../components/Header'
 
 const themePath = require(`../themes/${process.env.NEXT_PUBLIC_THEME_NAME}`)
@@ -67,4 +68,4 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   )
 }
 
-export default App
+export default wrapper.withRedux(withReduxSaga(App))
